@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //init view model
-        dogsViewModel = ViewModelProvider(this, DogsViewModelFactory()).get(DogsViewModel::class.java)
+        dogsViewModel = ViewModelProvider(this, DogsViewModelFactory(this.application))[DogsViewModel::class.java]
 
         binding.recyclerview.adapter = adapter
 

@@ -1,7 +1,6 @@
 package com.osorio.core.domain
 
 import com.osorio.core.data.Dog
-import com.osorio.core.data.DogsResponse
 import retrofit2.Response
 import retrofit2.http.GET
 
